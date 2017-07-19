@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anmolpc.playmmusicplayer.GenreView">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/genreart"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageButton
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="35dp"
+           android:layout_alignParentTop="true"
+           android:src="@drawable/backbutton"
+           android:id="@+id/genrebackpress"
+           android:background="@android:color/transparent"
+           android:scaleType="fitXY"
+           android:layout_width="30dp"
+           android:layout_height="30dp" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="90dp"
+           android:textColor="@color/colorWhite"
+           android:text="Test"
+           android:textSize="25sp"
+           android:textStyle="bold"
+           android:maxLines="1"
+           android:ellipsize="end"
+           android:maxEms="20"
+           android:typeface="serif"
+           android:layout_below="@+id/genrebackpress"
+           android:id="@+id/nameofgenre"/>
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/genresongs"
+           android:orientation="vertical"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+</FrameLayout>

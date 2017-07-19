@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="New Playlist Name:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:inputType="textNoSuggestions"
+        android:id="@+id/inputName"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/yesbtn"
+            android:text="Yes"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/nobtn"
+            android:text="No"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anmolpc.playmmusicplayer.ArtistSongs">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/artistallsongart"
+        android:scaleType="centerCrop"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/backbutton"
+                android:id="@+id/allbackPress"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dp"
+                android:text="All Hope Is Gone"
+                android:textColor="@color/colorWhite"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxEms="20"
+                android:layout_below="@+id/allbackPress"
+                android:id="@+id/allalbumnamesonglist"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="12 Songs"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:layout_below="@+id/allalbumnamesonglist"
+                android:id="@+id/allartistnumbersngs"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expdlst"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

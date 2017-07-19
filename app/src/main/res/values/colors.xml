@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D4E6D</color>
+    <color name="colorPrimaryDark">#4F345A</color>
+    <color name="colorAccent">#441D6D</color>
+    <color name="colorDarker">#d3c498</color>
+    <color name="colorLighter">#FFF4D1</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="cardviewlayoutbackground">#f3e5f5</color>
+    <color name="cardviewbackground">#e1bee7</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="Tab_Highlighter">#000000</color>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Playlist Name"
+        android:id="@+id/playname"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="25 Songs"
+        android:id="@+id/playnoofsongs"
+        android:textSize="@dimen/_10sdp"/>
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/selectplayoptions"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    <TextView
+        android:id="@+id/playlistoptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="&#8942;"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

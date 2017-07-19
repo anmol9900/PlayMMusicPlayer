@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/playnow" android:title="Play Now"/>
+    <item android:id="@+id/playnext" android:title="Play Next"/>
+    <item android:id="@+id/addtoplay" android:title="Add to Playlist" />
+    <item android:id="@+id/delete" android:title="Delete"/>
+    <item android:id="@+id/share" android:title="Share"/>
+</menu>

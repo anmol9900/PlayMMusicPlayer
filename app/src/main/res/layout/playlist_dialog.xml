@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Playlist"
+        android:id="@+id/createplaylist"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="No Playlists"
+        android:textAlignment="center"
+        android:id="@+id/emptyplaylist"
+        android:visibility="gone"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/allplaylists"/>
+    </LinearLayout>
+</LinearLayout>

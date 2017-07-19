@@ -1,0 +1,65 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anmolpc.playmmusicplayer.PlaylistView">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/playlistart"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/backbutton"
+            android:id="@+id/playlistbackpress"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxEms="20"
+            android:typeface="serif"
+            android:layout_below="@+id/playlistbackpress"
+            android:id="@+id/nameofplaylist"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="12 Songs"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/nameofplaylist"
+            android:id="@+id/noofsongsplaylist"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/playlistsongs"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

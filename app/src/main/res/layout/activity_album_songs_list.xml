@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anmolpc.playmmusicplayer.AlbumSongsList">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/albumartalbumlist"/>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/backbutton"
+            android:id="@+id/backPress"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="100dp"
+            android:text="All Hope Is Gone"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxEms="20"
+            android:typeface="serif"
+            android:layout_below="@+id/backPress"
+            android:id="@+id/albumnamesonglist"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Slipknot"
+            android:lines="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:typeface="serif"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:layout_below="@+id/albumnamesonglist"
+            android:id="@+id/artistsonglist"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:text="2003"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_below="@+id/albumnamesonglist"
+            android:id="@+id/albumyear"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/albumsonglist"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

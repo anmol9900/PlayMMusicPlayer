@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:duplicateParentState="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/songlay"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_weight=".90">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/hello"/>
+            <TextView
+                android:id="@+id/song_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/adele"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="4:53"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/songoptions"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".10">
+    <TextView
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="&#8942;"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16sdp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

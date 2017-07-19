@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:animateLayoutChanges= "true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/artistNametxt"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Slipknot"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artstalbums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/artistNametxt"
+                android:text="1 Album,"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/artstnumberofsngs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/artistNametxt"
+                android:layout_toEndOf="@+id/artstalbums"
+                android:text="12 songs"
+                android:textSize="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/artstalbums" />
+
+            <RelativeLayout
+                android:id="@+id/artistoptions"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="&#8942;"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expandview"
+                android:layout_centerInParent="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_toLeftOf="@+id/artistoptions"
+                android:layout_toStartOf="@+id/artistoptions"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            <ImageButton
+                android:layout_centerInParent="true"
+                android:id="@+id/expand"
+                android:clickable="false"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/uparrow"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rcyAdd"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
